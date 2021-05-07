@@ -1,0 +1,7 @@
+---
+username: ubuntu
+symbol_path: symbol-bootstrap
+preset_name: preset.yml
+symbol_password: hogehoge
+https_portal: true
+https_portal_path: https-portal

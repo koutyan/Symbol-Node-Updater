@@ -1,0 +1,59 @@
+---
+- name: Stop node services
+  hosts: all
+  vars_files:
+    - ./conf/vars.yml
+  tasks:
+    - name: Stop https-portal container
+      shell: cd /home/{{ username }}/{{ https_portal_path }} && docker-compose down
+      when: https_portal == true
+
+    - name: Stop symbol-bootstrap
+      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap stop
+
+
+- name: Update node
+  hosts: all
+  become: yes
+  vars_files:
+    - ./conf/vars.yml
+  tasks:
+    - name: Update npm
+      npm:
+        global: yes
+        state: latest
+    
+    - name: Update symbol-bootstrap
+      npm:
+        name: symbol-bootstrap
+        global: yes
+        state: latest
+
+
+- name: Restart Symbol node
+  hosts: all
+  vars_files:
+    - ./conf/vars.yml
+  tasks:
+    - name: Configuration symbol-bootstrap (it might take a few minutes)
+      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap config -p mainnet -a dual -c {{ preset_name }} --upgrade --password={{ symbol_password }}
+
+    - name: Start symbol-bootstrap (it might take a few minutes)
+      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap start -d --upgrade --password={{ symbol_password }}
+
+    - name: Start https-portal container
+      shell: cd /home/{{ username }}/{{ https_portal_path }} && docker-compose up -d
+      when: https_portal == true
+
+    - name: Wait activating server
+      pause:
+        seconds: 30
+
+    - name: Check Symbol node health
+      uri:
+        url: http://{{ ansible_facts['default_ipv4']['address'] }}:3000/node/health
+        return_content: yes
+        status_code: 200
+      register: result
+      failed_when: "'down' in result.content or 'up' not in result.content"
+    
