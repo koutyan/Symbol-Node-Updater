@@ -183,6 +183,8 @@ symbol-bootstrap/1.0.5 linux-x64 node-v14.16.1
 
 - その他、ご意見やご要望なども上記Issue pageにて受け付けております。
 
+- アップデート通知などは、[Twitter(@_kotyan_)](https://twitter.com/_kotyan_) で行います。
+
 --
 
 - If an error occurs in the SSH connection when executing step 4, each (or both) of the following possibilities are possible.
@@ -221,6 +223,8 @@ symbol-bootstrap/1.0.5 linux-x64 node-v14.16.1
   - Details of the error (if it is long, it is preferable to copy and paste it into a separate file and attach it)
 
 - Other comments and requests are also welcome on the above Issue page.
+
+- Updates and other information will be posted on [Twitter(@_kotyan_)](https://twitter.com/_kotyan_).
 
 ## Donate
 
