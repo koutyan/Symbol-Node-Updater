@@ -65,7 +65,7 @@ $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
-4： 最後に以下のコマンドを実行します。ユーザーパスワードとrootパスワードを求められるので、入力してください。Symbolノードの更新が実施されます。`WARNING`などの表示は気にしないでください。
+4： 最後に以下のコマンドを実行します。2回パスワードを求められるので、入力してください。Symbolノードの構築が実施されます。`WARNING`などの表示は気にしないでください。
 
 ```(text)
 $ ansible-playbook playbook.yml -vvv
@@ -118,14 +118,14 @@ The following operations should be performed on Ubuntu.
     https_portal_path: https-portal
     ```
 
-3： Execute the following command. You will be asked for a password, enter it. You will be asked for your password. When "Setup done" is displayed, you are done.
+3： Execute the following command. You will be asked for your password, enter it. Pre-renewal preparations will be made. When "Setup done" is displayed, you are done.
 
 ```(text)
 $ chmod +x setup.sh
 $ ./setup.sh
 ```
 
-4： Finally, execute the following command, then you will be prompted for your user password and root password, enter them: Symbol node updating will be performed. Don't worry about the `WARNING` and other indications.
+4： Finally, execute the following command. You will be prompted for your password twice, enter it, and the Symbol node will be updated. Don't worry about the `WARNING` and other indications.
 
 ```(text)
 $ ansible-playbook playbook.yml -vvv
