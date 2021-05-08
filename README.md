@@ -31,9 +31,9 @@ This is a tool that makes it easy to update Symbol nodes. You can easily update 
 1： ツールをダウンロードして解凍します。
 
   ```(text)
-  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.tar.gz
-  $ tar xzvf v1.0.tar.gz
-  $ cd Symbol-Node-Updater-1.0/
+  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
+  $ tar xzvf v1.0.1.tar.gz
+  $ cd Symbol-Node-Updater-1.0.1/
   ```
 
 2： **/confディレクトリ内**のファイルを編集して、自分に合った設定にします。
@@ -91,9 +91,9 @@ The following operations should be performed on Ubuntu.
 1： Download and unzip the tool.
 
   ```(text)
-  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.tar.gz
-  $ tar xzvf v1.0.tar.gz
-  $ cd Symbol-Node-Updater-1.0/
+  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
+  $ tar xzvf v1.0.1.tar.gz
+  $ cd Symbol-Node-Updater-1.0.1/
   ```
 
 2： Edit the files **in the /conf directory** to make the settings suitable for you.

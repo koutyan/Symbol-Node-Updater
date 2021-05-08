@@ -38,8 +38,11 @@
     - name: Configuration symbol-bootstrap (it might take a few minutes)
       shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap config -p mainnet -a dual -c {{ preset_name }} --upgrade --password={{ symbol_password }}
 
+    - name: Upgrade docker-compose.yml (it might take a few minutes)
+      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap compose --upgrade --password={{ symbol_password }}
+
     - name: Start symbol-bootstrap (it might take a few minutes)
-      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap start -d --upgrade --password={{ symbol_password }}
+      shell: cd /home/{{ username }}/{{ symbol_path }} && symbol-bootstrap run -d
 
     - name: Start https-portal container
       shell: cd /home/{{ username }}/{{ https_portal_path }} && docker-compose up -d
