@@ -71,11 +71,11 @@ $ ./setup.sh
 $ ansible-playbook playbook.yml -vvv
 ```
 
-5： しばらく待って、実施結果が表示され、`failed=0` となっていれば成功です。symbol-bootstrapが格納されているディレクトリに移動して、`symbol-bootstrap -v` を実行して、ノードが更新されていることを確認してください。以上で完了です。
+5： しばらく待って、実施結果が表示され、`unreachable=0` `failed=0` となっていれば成功です。symbol-bootstrapが格納されているディレクトリに移動して、`symbol-bootstrap -v` を実行して、ノードが更新されていることを確認してください。以上で完了です。
 
 ```(text)
 PLAY RECAP **************************************************************************************************************************
-localhost                  : ok=12   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+localhost                  : ok=13   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 $ cd ~/symbol-bootstrap
 $ symbol-bootstrap -v
@@ -131,11 +131,11 @@ $ ./setup.sh
 $ ansible-playbook playbook.yml -vvv
 ```
 
-5： Wait a few minutes, if the result is `failed=0`, you have succeeded. Go to the directory where symbol-bootstrap is stored and run `symbol-bootstrap -v` to make sure that the node is updated. You are done.
+5： Wait a few minutes, if the result is `unreachable=0` `failed=0`, you have succeeded. Go to the directory where symbol-bootstrap is stored and run `symbol-bootstrap -v` to make sure that the node is updated. You are done.
 
 ```(text)
 PLAY RECAP **************************************************************************************************************************
-localhost                  : ok=12   changed=6    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+localhost                  : ok=13   changed=7    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
 
 $ cd ~/symbol-bootstrap
 $ symbol-bootstrap -v
