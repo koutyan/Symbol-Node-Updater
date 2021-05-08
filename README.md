@@ -32,7 +32,7 @@ This is a tool that makes it easy to update Symbol nodes. You can easily update 
 
   ```(text)
   $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
-  $ tar xzvf v1.0.1.tar.gz
+  $ tar xzvf v1.0.1.tar.gz && rm v1.0.1.tar.gz
   $ cd Symbol-Node-Updater-1.0.1/
   ```
 
@@ -92,7 +92,7 @@ The following operations should be performed on Ubuntu.
 
   ```(text)
   $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
-  $ tar xzvf v1.0.1.tar.gz
+  $ tar xzvf v1.0.1.tar.gz && rm v1.0.1.tar.gz
   $ cd Symbol-Node-Updater-1.0.1/
   ```
 
