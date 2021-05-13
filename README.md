@@ -4,13 +4,21 @@ Easily update Symbol nodes.
 
 ## Overview
 
-Symbolノードの更新を簡単に行えるツールです。設定を少しだけ編集してコマンドを実行するだけで簡単にSymbolノード(symbol-bootstrap)の更新を実施できます。複数ノードの一括更新にも対応しています。
+Symbolノードの更新を簡単に行えるツールです。以下の機能に対応しています。
 
-This is a tool that makes it easy to update Symbol nodes. You can easily update Symbol nodes (symbol-bootstrap) by editing a few settings and executing a command. It also supports batch updating of multiple nodes.
+- symbol-bootstrap の最新バージョンへの更新
+- `preset.yml` (プリセットファイル) の更新適用
+- 複数ノードの一括更新
+
+This is a tool that makes it easy to update Symbol nodes. The following functions are supported.
+
+- Update symbol-bootstrap to the latest version.
+- Apply updates of `preset.yml` (preset file).
+- Batch update of multiple nodes.
 
 ## Attention
 
-- このツールはSymbolノード(symbol-bootstrap)の更新のみをサポートしています。Symbolノードの構築自動化ツールについては、[Symbol Node Builder](https://github.com/koutyan/Symbol-Node-Builder) を参照ください。
+- このツールはSymbolノードの更新のみをサポートしています。Symbolノードの構築自動化ツールについては、[Symbol Node Builder](https://github.com/koutyan/Symbol-Node-Builder) を参照ください。
 
 - このツールのサポートOSは **Ubuntu** です。作者は *Ubuntu 20.04* でのテストを実施しています。**CentOS系では動作しません**。(ご要望があれば今後対応するかもしれません)
 
@@ -18,7 +26,7 @@ This is a tool that makes it easy to update Symbol nodes. You can easily update 
 
 --
 
-- This tool only supports updating Symbol nodes (symbol-bootstrap); for an automated tool to build Symbol nodes, see [Symbol Node Builder](https://github.com/koutyan/Symbol-Node-Builder).
+- This tool only supports updating Symbol nodes; for an automated tool to build Symbol nodes, see [Symbol Node Builder](https://github.com/koutyan/Symbol-Node-Builder).
 
 - The supported OS for this tool is **Ubuntu**. The author has tested it on *Ubuntu 20.04*. **It does not work on CentOS systems**. (We may support this in the future if requested).
 
@@ -82,7 +90,7 @@ $ symbol-bootstrap -v
 symbol-bootstrap/1.0.5 linux-x64 node-v14.16.1
 ```
 
-**今後symbol-bootstrapの更新があった場合、手順4のコマンドを実行するだけで簡単にSymbolノードを更新できます。**
+**今後Symbolノードの更新を実施する場合は、手順4のコマンドを実行するだけで実施できます。**
 
 --
 
@@ -142,7 +150,7 @@ $ symbol-bootstrap -v
 symbol-bootstrap/1.0.5 linux-x64 node-v14.16.1
 ```
 
-**If there is an update of symbol-bootstrap in the future, you can easily update the Symbol node by simply executing the command in step 4.**
+**If you want to update the Symbol node in the future, you can do so by simply executing the command in step 4.**
 
 ## Tips
 
