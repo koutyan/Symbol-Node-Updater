@@ -136,7 +136,7 @@ $ ./setup.sh
 4： Finally, execute the following command. You will be prompted for your password twice, enter it, and the Symbol node will be updated. Don't worry about the `WARNING` and other indications.
 
 ```(text)
-$ ansible-playbook playbook.yml -vvv
+$ ansible-playbook playbook.yml -v
 ```
 
 5： Wait a few minutes, if the result is `unreachable=0` `failed=0`, you have succeeded. Go to the directory where symbol-bootstrap is stored and run `symbol-bootstrap -v` to make sure that the node is updated. You are done.
