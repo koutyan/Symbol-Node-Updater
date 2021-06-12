@@ -76,7 +76,7 @@ $ ./setup.sh
 4： 最後に以下のコマンドを実行します。2回パスワードを求められるので、入力してください。Symbolノードの更新が実施されます。`WARNING`などの表示は気にしないでください。
 
 ```(text)
-$ ansible-playbook playbook.yml -vvv
+$ ansible-playbook playbook.yml -v
 ```
 
 5： しばらく待って、実施結果が表示され、`unreachable=0` `failed=0` となっていれば成功です。symbol-bootstrapが格納されているディレクトリに移動して、`symbol-bootstrap -v` を実行して、ノードが更新されていることを確認してください。以上で完了です。
