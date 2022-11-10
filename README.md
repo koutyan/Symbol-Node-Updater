@@ -10,6 +10,8 @@ Symbolノードの更新を簡単に行えるツールです。以下の機能�
 - `preset.yml` (プリセットファイル) の更新適用
 - 複数ノードの一括更新
 
+--
+
 This is a tool that makes it easy to update Symbol nodes. The following functions are supported.
 
 - Update symbol-bootstrap to the latest version.
@@ -39,9 +41,9 @@ This is a tool that makes it easy to update Symbol nodes. The following function
 1： ツールをダウンロードして解凍します。
 
   ```(text)
-  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
-  $ tar xzvf v1.0.1.tar.gz && rm v1.0.1.tar.gz
-  $ cd Symbol-Node-Updater-1.0.1/
+  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.2.tar.gz
+  $ tar xzvf v1.0.2.tar.gz && rm v1.0.2.tar.gz
+  $ cd Symbol-Node-Updater-1.0.2/
   ```
 
 2： **/confディレクトリ内**のファイルを編集して、自分に合った設定にします。
@@ -99,9 +101,9 @@ The following operations should be performed on Ubuntu.
 1： Download and unzip the tool.
 
   ```(text)
-  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.1.tar.gz
-  $ tar xzvf v1.0.1.tar.gz && rm v1.0.1.tar.gz
-  $ cd Symbol-Node-Updater-1.0.1/
+  $ wget https://github.com/koutyan/Symbol-Node-Updater/archive/refs/tags/v1.0.2.tar.gz
+  $ tar xzvf v1.0.2.tar.gz && rm v1.0.2.tar.gz
+  $ cd Symbol-Node-Updater-1.0.2/
   ```
 
 2： Edit the files **in the /conf directory** to make the settings suitable for you.

@@ -14,7 +14,7 @@
 
 - name: Update node
   hosts: all
-  become: yes
+  become: true
   vars_files:
     - ./conf/vars.yml
   tasks:
@@ -48,15 +48,13 @@
       shell: cd /home/{{ username }}/{{ https_portal_path }} && docker-compose up -d
       when: https_portal == true
 
-    - name: Wait activating server
-      pause:
-        seconds: 30
-
     - name: Check Symbol node health
       uri:
         url: http://{{ ansible_facts['default_ipv4']['address'] }}:3000/node/health
         return_content: yes
         status_code: 200
       register: result
-      failed_when: "'down' in result.content or 'up' not in result.content"
+      until: "'down' not in result.content and 'up' in result.content"
+      retries: 120
+      delay: 5
     
